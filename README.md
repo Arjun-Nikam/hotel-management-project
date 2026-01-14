@@ -1,35 +1,67 @@
-# hotel-management-project
+# Hotel Management System
 
-#Overview
-This is a Hotel Management System developed using Spring Boot for the backend and HTML, CSS, and JavaScript for the frontend.
-The application provides basic CRUD operations to manage hotel guest records, including check-in/check-out details, room allocation, and payment information.
-Data is persisted using a MySQL database.
+## Description
+The Hotel Management System is a full-stack web application developed to manage hotel guest records efficiently.  
+The backend is built using Spring Boot and exposes RESTful APIs for performing CRUD operations on guest data.  
+The frontend is implemented using HTML, CSS, and JavaScript.  
+All data is stored in a MySQL database.
 
-This project is designed to demonstrate backend fundamentals, REST API development, and database integration.
+---
 
-##Features
-Add new hotel guest records
+## Key Features
+- Create, read, update, and delete guest records
+- Search guest details using Aadhar number
+- Manage check-in and check-out dates
+- Room allocation and payment tracking
+- RESTful API architecture
 
-View all guest entries
+---
 
-Search guest details using Aadhar number
+## Technology Stack
 
-Update existing guest information
+### Backend
+- Java
+- Spring Boot
+- Spring Data JPA
+- REST APIs
 
-Delete guest records
+### Frontend
+- HTML
+- CSS
+- JavaScript
 
-Store check-in and check-out timestamps
+### Database
+- MySQL
 
-RESTful API architecture
+### Tools
+- Maven
+- IntelliJ IDEA / Eclipse
+- Postman (for API testing)
+---
 
-##Tech Stack
+## API Endpoints
 
-###Backend
-Java
+| Method | Endpoint | Description |
+|------|---------|------------|
+| GET | /hotel | Fetch all guest records |
+| POST | /hotel | Add a new guest |
+| GET | /hotel/aadhar/{aadhar} | Get guest by Aadhar |
+| PUT | /hotel/update/{aadhar} | Update guest |
+| DELETE | /hotel/delete/{aadhar} | Delete guest |
 
-Spring Boot
+---
 
-Spring Data JPA
+## How to Run
+1. Clone the repository
+2. Create a MySQL database
+3. Update database credentials in application.properties
+4. Run the Spring Boot application
+5. Test APIs using Postman or frontend
 
-REST APIs
+---
 
+## Future Enhancements
+- JWT authentication and authorization
+- Role-based access control
+- Input validation
+- Improved frontend UI
